@@ -1,0 +1,28 @@
+import turtle
+t=turtle.Turtle()
+x=turtle.Screen()
+x.bgcolor("white")
+t.speed(0)
+
+t.color("red")
+t.begin_fill()
+t.right(-75)
+t.forward(100)
+t.right(90)
+t.forward(25)
+t.right(100)
+t.forward(110)
+t.right(140)
+t.forward(115)
+t.left(118)
+t.forward(25)
+t.left(70)
+t.forward(110)
+t.color("black")
+t.end_fill()
+t.setposition(5,-22)
+
+t.write("vican",move=False,align="left",font={"Arial",1000,"French Script MT"})
+t.hideturtle()
+
+input()
