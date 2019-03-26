@@ -1,0 +1,171 @@
+import turtle
+t=turtle.Turtle()
+x=turtle.Screen()
+x.bgcolor("blue")
+t.speed(0)
+# 1cir
+t.begin_fill()
+t.color("black")
+t.circle(30)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(-65,15)
+t.pendown()
+t.forward(130)
+t.end_fill()
+# 2ci
+t.begin_fill()
+t.penup()
+t.setposition(0,-80)
+t.pendown()
+t.color("white")
+t.circle(50)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(-25,-30)
+t.pendown()
+t.color("black")
+t.circle(7)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(25,-30)
+t.pendown()
+t.color("black")
+t.circle(7)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(0,-55)
+t.pendown()
+t.color("black")
+t.circle(10)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(0,53)
+t.pendown()
+t.color("black")
+t.circle(5)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(0,5)
+t.pendown()
+t.color("red")
+t.circle(2)
+t.end_fill()
+# 3cir
+t.begin_fill()
+t.penup()
+t.setposition(0,-180)
+t.pendown()
+t.color("white")
+t.circle(60)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(0,-100)
+t.pendown()
+t.color("black")
+t.circle(8)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(0,-120)
+t.pendown()
+t.color("black")
+t.circle(8)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(0,-140)
+t.pendown()
+t.color("black")
+t.circle(8)
+t.end_fill()
+t.begin_fill()
+t.penup()
+t.setposition(0,-160)
+t.pendown()
+t.color("black")
+t.circle(8)
+t.end_fill()
+# 4cir
+t.begin_fill()
+t.penup()
+t.setposition(0,-300)
+t.pendown()
+t.color("white")
+t.circle(70)
+t.end_fill()
+
+from turtle import Turtle, Screen
+
+def drow_petal(turtle,radius):
+
+
+    heading=turtle.heading()
+    turtle.circle(100,60)
+    turtle.left(120)
+    turtle.circle(100,60)
+    turtle.setheading(heading)
+
+# my_radius=int(input("what is the radius of the flower: "))
+#
+#
+# my_petals=int(input('How many petals do you want: '))
+
+flower=Turtle()
+flower.speed(0)
+flower.penup()
+flower.setposition(250,-100)
+flower.pendown()
+
+flower.begin_fill()
+flower.color("red")
+for i in range(20):
+    drow_petal(flower,100)
+    flower.left(360/20)
+
+flower.end_fill()
+
+flower.penup()
+flower.setposition(250,-100)
+flower.pendown()
+flower.right(90)
+flower.forward(200)
+
+
+
+flower=Turtle()
+flower.speed(0)
+
+flower.penup()
+flower.setposition(-250,-100)
+flower.pendown()
+
+flower.begin_fill()
+flower.color("black")
+for j in range(20):
+    drow_petal(flower,100)
+    flower.left(360/20)
+flower.end_fill()
+
+flower.penup()
+flower.setposition(-250,-100)
+flower.pendown()
+flower.right(90)
+flower.forward(200)
+
+
+
+
+Screen().exitonclick()
+flower.hideturtle()
+
+
+
+input()
