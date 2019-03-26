@@ -1,0 +1,13 @@
+import turtle
+t=turtle.Turtle()
+x=turtle.Screen()
+x.bgcolor("black")
+t.color("blue")
+t.shape("circle")
+t.pensize(5)
+for i in range(100):
+    t.left(30)
+    t.forward(10+i)
+    t.stamp()
+
+input

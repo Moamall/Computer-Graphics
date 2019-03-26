@@ -1,0 +1,34 @@
+from turtle import Turtle, Screen
+
+def drow_petal(turtle,radius):
+
+
+    heading=turtle.heading()
+    turtle.circle(radius,60)
+    turtle.left(120)
+    turtle.circle(radius,60)
+    turtle.setheading(heading)
+
+my_radius=int(input("what is the radius of the flower: "))
+
+
+my_petals=int(input('How many petals do you want: '))
+
+flower=Turtle()
+flower.speed(1)
+for i in range(my_petals):
+    drow_petal(flower,my_radius)
+    flower.left(360/my_petals)
+
+
+Screen().exitonclick()
+flower.hideturtle()
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+from turtle import Turtle, Screen
+
+
+def drow_petal(turtle, radius):
+    heading = turtle.heading()
+    turtle.circle(radius, 60)
+    turtle.left(120)
+    turtle.circle(radius, 60)
+    turtle.setheading(heading)
+
+
+my_radius = int(input("what is the radius of the flower: "))
+my_petals = int(input("How many petals do you want: "))
+
+flower = Turtle()
+flower.speed(50)
+for i in range(my_petals):
+    drow_petal(flower, my_radius)
+    flower.left(360 / my_petals)
+
+Screen().exitonclick()  # ⁄‰œ„« ÌŸ€ÿ «·„” Œœ„  Œ ›Ì «·‰«›–…
+flower.hideturtle()  # ·«Œ›«¡ «·„ƒ‘— »⁄œ «·«‰ Â«¡ „‰ «·—”„…
+
+
+
+__________________________________________________________________-
+‰›«Œ« 
+
+
+
+import turtle
+t=turtle.Turtle()
+t.speed(5)
+t.left(90)
+t.forward(200)
+t.color("red")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.backward(200)
+
+t.left(-20)
+t.forward(200)
+t.color("black")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.backward(200)
+
+t.left(-30)
+t.forward(200)
+t.color("yellow")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.backward(200)
+
+t.left(95)
+t.forward(200)
+t.color("#00ffff")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.backward(200)
+
+
+t.left(-20)
+t.forward(200)
+t.color("#ff00ff")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.backward(200)
+
+
+
+
+input()
+
+
+

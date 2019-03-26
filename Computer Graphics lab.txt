@@ -1,0 +1,79 @@
+import turtle
+t=turtle.Turtle()
+x=turtle.Screen()
+x.bgcolor("black")
+t.color("red")
+t.pensize()
+t.speed(30)
+for i in range(200):
+    t.circle(10+i)
+    t.left(5)
+    t.forward(5)
+
+input()
+
+
+
+
+lib
+import turtle
+t=turtle.Turtle()
+x=["red","blue","green","black"]
+
+t.shape("turtle")
+t.pencolor("red")
+t.pencolor("blue")
+t.pencolor("red")
+t.fillcolor("#00ff00")
+
+for i in range(0,4):
+    t.pencolor(x[i])
+    t.pencolor(x[i])
+    t.forward(100)
+    t.left(90)
+t.pensize(10)
+t.speed()
+
+input()
+
+
+
+
+lib
+import turtle
+t=turtle.Turtle()
+t.pensize(10)
+t.speed(10)
+t.shape("turtle")
+
+t.circle(50)
+t.pencolor("red")
+t.penup()
+t.setposition(100,0)
+t.pendown()
+
+t.color("blue")
+t.circle(50)
+t.penup()
+t.setposition(200,0)
+t.pendown()
+
+t.color("red")
+t.circle(50)
+t.penup()
+t.setposition(50,-50)
+t.pendown()
+
+t.color("yellow")
+t.circle(50)
+t.penup()
+t.setposition(150,-50)
+t.pendown()
+
+t.color("black")
+t.circle(50)
+t.penup()
+t.setposition(0,0)
+t.pendown()
+
+input()
